@@ -4,5 +4,31 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+}
+
+
+/* DEBUG ONLY *******************************/
+.debug {
+    padding: 1rem;
+    border: 1px dashed blue;
+    background-color: azure;
+}
+
+.debug_border{
+    border: 1px dashed red;
+    padding: .5rem;
+}
+
+/********************************************/
+
+.info_bar_bg{
+    background-color: $infobar_color;
+}
+
+.jumbotron_bg {
+    background-image: url("/public/img/bg-9.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
 }
