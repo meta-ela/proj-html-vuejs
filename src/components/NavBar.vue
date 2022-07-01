@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container py-3 debug_border">
         <!-- stampare i dati con v-for??? -->
         <nav class="d-flex justify-content-between">
             <div class="debug">

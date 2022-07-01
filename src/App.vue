@@ -1,7 +1,10 @@
 <template>
   <div id="app">
+    <!-- sezione navbar e jumbotron -->
     <TheHeader></TheHeader>
+    <!-- suddiviso in 6 sezioni/microaree -->
     <TheMain></TheMain>
+    <!-- suddiviso in 2 sezioni -->
     <TheFooter></TheFooter>
   </div>
 </template>

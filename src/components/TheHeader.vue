@@ -2,7 +2,7 @@
     <div>
         <!-- info-bar superiore fisso -->
         <div class="info_bar_bg">
-            <div class="container">
+            <div class="container debug_border">
                 <div class="d-flex justify-content-between">
                     <div class="debug">
                         Lorem ipsum dolor sit
@@ -20,12 +20,13 @@
         </div>
         <!-- jumbotron image con dentro NavBar.vue -->
         <div class="jumbotron_bg">
-            <div class="container">
+            <NavBar></NavBar>
+            <div class="container debug_border">
                 <!-- nav bar con ciclo v-for -->
-                <NavBar></NavBar>
                 <div class="row row-cols-2">
                     <div class="col debug mt-5">
                         <small>LOREM LOREM</small>
+                        <h1>CARGO TRANSPORT</h1>
                         <P>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quos corporis aliquid ex perspiciatis dolor odit iste voluptates debitis eius quo inventore exercitationem
                         </P>
