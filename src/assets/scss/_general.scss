@@ -25,19 +25,20 @@
 
 .jumbotron_bg {
     background: rgba(0, 0, 0, 0.6) url("/public/img/bg-9.jpg");
-    height: 450px;
+    height: 650px;
     background-blend-mode: darken;
+    background-position: top;
     /* filter: brightness(0.5); */
 }
 
 .banner_img {
     background-image: url("/public/img/bg-10.jpg");
     height: 350px;
+    background-position: center;
 }
 
 .jumbotron_bg, .banner_img {
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -46,7 +47,7 @@ ul li {
     list-style: none;
 }
 
-li a {
+a {
     text-decoration: none;
     padding: 1rem 0rem;
 }
@@ -72,5 +73,10 @@ li a {
     padding-right: .25rem;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
 }
 /***********************************/

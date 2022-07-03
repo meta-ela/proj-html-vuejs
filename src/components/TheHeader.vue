@@ -25,17 +25,17 @@
         <!-- jumbotron image con dentro NavBar.vue -->
         <div class="jumbotron_bg">
             <NavBar></NavBar>
-            <div class="container debug_border">
+            <div class="container my-5">
                 <!-- nav bar con ciclo v-for -->
-                <div class="row row-cols-2">
-                    <div class="col debug mt-5">
-                        <small>LOREM LOREM</small>
-                        <h1>CARGO TRANSPORT</h1>
-                        <P>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores quos corporis aliquid ex perspiciatis dolor odit iste voluptates debitis eius quo inventore exercitationem
+                <div class="row">
+                    <div class="col-4 mt-5">
+                        <small class="text-primary">LOGISTIC SERVICES</small>
+                        <h1 class="text-white">CARGO TRANSPORT</h1>
+                        <P class="text-white fw-light mb-5">
+                            Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles.
                         </P>
-                        <a class="debug_border" href="javascript:void(0)">GET IN TOUCH</a>
-                        <a class="debug_border" href="javascript:void(0)">READ MORE</a>
+                        <a class="btn_outline bg-primary me-4" href="javascript:void(0)">GET IN TOUCH</a>
+                        <a class="btn_outline" href="javascript:void(0)">READ MORE</a>
                     </div>
                     <div class="col"></div>
                 </div>
