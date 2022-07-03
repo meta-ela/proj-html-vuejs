@@ -2,33 +2,62 @@
     <div>
         <!-- section bianco WHO WE ARE -->
         <section class="py-5">
-            <div class="container debug_border">
+            <div class="container py-5">
                 <div class="row">
-                    <div class="col-8">
-                        <div class="debug">
-                            <small>WHO WE ARE</small>
-                            <h2>Excellence in Transport</h2>
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi id et debitis rem nulla sit necessitatibus quaerat officia numquam at eaque laboriosam consectetur, corrupti magnam facilis, earum iusto iste?
-                                Excepturi ab omnis ipsa at! Voluptates necessitatibus dolore eaque iusto in commodi explicabo qui porro atque, soluta perferendis dicta libero animi fugiat officiis adipisci sed facilis aliquid nam non ut!
+                    <div class="col-9">
+                        <div>
+                            <small class="text-primary">WHO WE ARE</small>
+                            <h2 class="my-3">
+                                <span class="colored_box_below"> <i class="bi bi-gem"></i> Excellence</span> in Transport</h2>
+                            <p class="fw-light">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quo ex earum dolorum placeat tenetur sit quas et, aut officia, ut voluptas architecto! Beatae molestias cum accusantium commodi, corporis laboriosam.
                             </p>
+                            <p class="fw-light">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quo ex earum dolorum placeat tenetur sit quas et, aut officia, ut voluptas architecto! Beatae molestias cum accusantium commodi, corporis laboriosam.
+                            </p>
+                            <div class="border_left_p mb-3">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quo ex earum dolorum placeat tenetur sit quas et, aut officia, ut voluptas architecto! Beatae molestias cum accusantium commodi, corporis laboriosam.
+                                </p>
+                            </div>
+                            <p class="fw-light">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi at ducimus omnis voluptate tempora ipsum
+                            </p>
+                            <ul class="fw-light">
+                                <li class="li_disc">lorem ipsum dolor sit amet</li>
+                                <li class="li_disc">lorem ipsum dolor sit amet</li>
+                                <li class="li_disc">lorem ipsum dolor sit amet</li>
+                                <li class="li_disc">lorem ipsum dolor sit amet</li>
+                                <li class="li_disc">lorem ipsum dolor sit amet</li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="row flex-column h-100">
-                            <div class="col">
-                                <div class="debug h-100">
-                                    <small>Vehicle Types</small>
-                                    <ul>
-                                        <li>light</li>
-                                        <li>light</li>
-                                        <li>light</li>
+                    <div class="col h-100">
+                        <div class="row flex-column h-100 g-3">
+                            <div class="col-7 w-100">
+                                <div class="h-100">
+                                    <div class="fs-4 fw-bold mb-2">Vehicle Types</div>
+                                    <ul class="ps-0">
+                                        <li v-for="(type, i) in vehicleTypesList" :key="i"
+                                        class="d-flex border-bottom">
+                                            <div class="box_img">
+                                                <img class="w-100" :src="type.src" :alt="type.type">
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-center w-100">
+                                                <div class="fw-bold fs-4">{{ type.type }}</div>
+                                                <div class="fw-lighter">{{ type.weight }}</div>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="debug h-100">
-                                    <small>certifications</small>
+                            <div class="col-5 w-100 ">
+                                <div class="h-100">
+                                    <div class="fs-4 fw-bold mb-2">Certifications</div>
+                                    <div class="box_img_certifications ">
+                                        <img class="w-100 shadow me-3" src="/img/certificate.png" alt="Vehicle Certificate">
+                                        <img class="w-100 shadow" src="/img/certificate.png" alt="Vehicle Certificate">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +200,24 @@ export default {
 
     data() {
         return {
-            state
+            state,
+            vehicleTypesList: [
+                {
+                    src: "/img/truck-1.png",
+                    type: "Light",
+                    weight: "Max Weight 1200 kg",
+                },
+                {
+                    src: "/img/truck-1.png",
+                    type: "Medium",
+                    weight: "Max Weight 6000 kg",
+                },
+                {
+                    src: "/img/truck-1.png",
+                    type: "Heavy",
+                    weight: "Max Weight 24000 kg",
+                },
+            ]
         }
     },
 }

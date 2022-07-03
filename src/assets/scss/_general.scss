@@ -64,6 +64,11 @@ a {
 
 
 /* DETTAGLI GRAFICI ****************/
+/* .colored_box_below_logo, .colored_box_below {
+    color: $primary;
+    background-color: rgba($primary_lighter, .5);
+} */
+
 .colored_box_below_logo {
     color: $primary;
     background-color: rgba($primary_lighter, .5);
@@ -75,8 +80,45 @@ a {
     border-bottom-left-radius: 25px;
 }
 
+.colored_box_below {
+    color: $primary;
+    background-color: $teal-200;
+    padding: .25rem 1rem;
+    border-radius: 4px;
+}
+
+.border_left_p {
+    font-weight: lighter;
+    padding: 1rem;
+    border-left: 8px solid $teal-200;
+}
+
+.li_disc {
+    list-style-type: disc;
+    line-height: 1.5rem;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 900;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.box_img {
+    padding: .5rem;
+    width: 100px;
+    background-color: $teal-200;
+    border-radius: 8px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.box_img_certifications {
+    width: 150px;
+    height: 150px;
+    display: flex;
 }
 /***********************************/
