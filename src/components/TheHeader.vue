@@ -3,16 +3,16 @@
         <!-- info-bar superiore fisso -->
         <div class="info_bar_bg">
             <div class="container py-2">
-                <div class="d-flex justify-content-between text-white">
+                <div class="d-flex justify-content-between text-white fw-light">
                     <div>
                         <i class="fa-solid fa-clock me-1"></i>
                         Open Hours: Mon - Sat - 9:00 - 18:00
                     </div>
                     <div>
                         <!-- stampare i dati con v-for -->
-                        <ul class="d-flex gap-4 mb-0 list-unstyled">
+                        <ul class="d-flex gap-4 mb-0">
                             <li v-for="(info, i) in headerInfo" :key="i">
-                                <a class="text-decoration-none text-white" href="javascript:void(0)">
+                                <a class="text-white" href="javascript:void(0)">
                                     <i :class="info.icon" class="me-1"></i>
                                     {{ info.info}}
                                 </a>

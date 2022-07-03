@@ -15,6 +15,12 @@
 <script>
 export default {
     name: "TheCard",
+
+    data() {
+        return {
+            
+        }
+    }
 }
 </script>
 

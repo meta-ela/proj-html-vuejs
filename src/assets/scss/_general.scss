@@ -1,5 +1,5 @@
 #app {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
@@ -17,7 +17,6 @@
     border: 1px dashed red;
     padding: .5rem;
 }
-
 /********************************************/
 
 .info_bar_bg{
@@ -25,8 +24,10 @@
 }
 
 .jumbotron_bg {
-    background-image: url("/public/img/bg-9.jpg");
+    background: rgba(0, 0, 0, 0.6) url("/public/img/bg-9.jpg");
     height: 450px;
+    background-blend-mode: darken;
+    /* filter: brightness(0.5); */
 }
 
 .banner_img {
@@ -40,3 +41,36 @@
     background-repeat: no-repeat;
 }
 
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    padding: 1rem 0rem;
+}
+
+
+/* BOTTONI  ***********************/
+.btn_outline {
+    color: white;
+    border: 1px solid $primary;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+}
+/***********************************/
+
+
+/* DETTAGLI GRAFICI ****************/
+.colored_box_below_logo {
+    color: $primary;
+    background-color: rgba($primary_lighter, .5);
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1.5rem;
+    padding-right: .25rem;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+/***********************************/
