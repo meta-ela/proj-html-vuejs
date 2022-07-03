@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="row flex-column">
+                        <div class="row flex-column h-100">
                             <div class="col">
                                 <div class="debug h-100">
                                     <small>Vehicle Types</small>
@@ -126,14 +126,21 @@
         <!-- section bianca con form SEND A MESSAGE -->
         <div class="py-5">
             <div class="container debug_border">
-                <div class="row">
-                    <div class="col-8">
-                        <div class="debug">
+                <div class="row h-100">
+                    <div class="col-8 ">
+                        <div class="debug ">
                             <small>SEND A MESSAGE</small>
                             <h2>Get in Touch</h2>
                             <small>lore lorem lore ispum dnsj</small>
                         </div>
-                        <form action=""></form>
+                        <form class="row g-3">
+                            <div class="col-auto">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col-auto">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </form>
                     </div>
                     <div class="col">
                         <div class="debug">
@@ -155,10 +162,18 @@
 </template>
 
 <script>
+import { state } from "../store";
 import TheCard from './TheCard.vue';
+
 export default {
     name: "TheMain",
-    components: { TheCard }
+    components: { TheCard },
+
+    data() {
+        return {
+            state
+        }
+    },
 }
 </script>
 
