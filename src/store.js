@@ -16,6 +16,7 @@ export const state = Vue.observable({
             info: "Main Avenue, 987",
         },
     ],
+
     navBarLinks: [
         {
             linkName: "HOME",
@@ -38,6 +39,7 @@ export const state = Vue.observable({
             href: "javascript:void(0)",
         },
     ],
+
     headerInfo: [
         {
             icon: "fa-solid fa-phone",
@@ -60,6 +62,7 @@ export const state = Vue.observable({
             info: "",
         },
     ],
+
     vehicleTypesList: [
         {
             src: "/img/truck-1.png",
@@ -77,6 +80,7 @@ export const state = Vue.observable({
             weight: "Max Weight 24000 kg",
         },
     ],
+
     roadMapList: [
         {
             number: "01",
@@ -104,12 +108,14 @@ export const state = Vue.observable({
             text: "lorem ipsum dolor sit amet consectectur.",
         },
     ],
+
     roadNumbersList: [
         "Certifications",
         "Employees",
         "Customers",
         "Countries Served",
     ],
+
     cardMainServicesInfo: [
         {
             subIcon: "fa-solid fa-arrow-right",
@@ -130,6 +136,7 @@ export const state = Vue.observable({
             text: "We work with most types of dry cargo, from valutable cargo to the most dangerous requiring care."
         },
     ],
+
     cardFeedbackInfo: [
         {
             subIcon: "fa-solid fa-quote-right",
@@ -148,6 +155,105 @@ export const state = Vue.observable({
             src: "/img/logo-3.png",
             title: "Dry Cargo",
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
+        },
+    ],
+
+    aboutFooterLink: [
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "The Company",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Institutional",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Social & Events",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Innovation",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Enviroment",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Technology",
+            href: "javascript:void(0)",
+        },
+    ],
+
+    transportFooterLink: [
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Industrialized",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Chemicals",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Packaged Liquids",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Construction",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Laminated Wood",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "And others",
+            href: "javascript:void(0)",
+        },
+    ],
+
+    supportFooterLink: [
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Responsibility",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Terms of Use",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "About Cookies",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Privacy Policy",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Accessibility",
+            href: "javascript:void(0)",
+        },
+        {
+            icon: "fa-solid fa-angle-right",
+            linkName: "Information",
+            href: "javascript:void(0)",
         },
     ],
 })

@@ -20,7 +20,7 @@
 
 <div v-else>
     <div class="card">
-        <div class="d-flex box_img">
+        <div class="d-flex box_img_card">
             <img class="w-100" :src="image" :alt="title">
         </div>
         <div class="fw-light py-4 text-start">
@@ -53,12 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
-.card {
-    padding: 2rem;
-    background-color: $card_color;
-    color: whitesmoke;
-    height: 100%;
-}
+
 
 .fa-truck-ramp-box, 
 .fa-temperature-high,
@@ -77,9 +72,9 @@ export default {
     height: 60px;
 }
 
-.box_img {
+.box_img_card {
     width: 150px;
-    height: 40px;
+    height: 35px;
 }
 
 img {

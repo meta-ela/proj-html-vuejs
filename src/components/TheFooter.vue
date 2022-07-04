@@ -1,11 +1,11 @@
 <template>
 <div>
     <div class="py-5 bg-secondary">
-        <div class="container debug_border">
+        <div class="container py-5">
             <div class="row">
                 <div class="col">
                     <div class="text-white">
-                        <div class="fs-5">
+                        <div class="fs-5 mb-4">
                             <span class="colored_box_below_logo">NEX</span> GEN
                         </div>
                         <p class="fw-light">
@@ -24,8 +24,44 @@
                         <a class="btn_outline" href="javascript:void(0)">GET IN TOUCH</a>
                     </div>
                 </div>
-                <div class="col-8">
-                    <TheCard></TheCard>
+                <div class="col">
+                    <div class="card">
+                        <h4 class="fw-bold">About</h4>
+                        <ul class="ps-0">
+                            <li class="my-1" v-for="(link, i) in aboutFooterLink" :key="i">
+                                <a class="text-light fw-light" :href="link.href">
+                                    <i class="me-2" :class="link.icon"></i>
+                                    {{link.linkName}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h4 class="fw-bold">Transport</h4>
+                        <ul class="ps-0">
+                            <li class="my-1" v-for="(link, i) in transportFooterLink" :key="i">
+                                <a class="text-light fw-light" :href="link.href">
+                                    <i class="me-2" :class="link.icon"></i>
+                                    {{link.linkName}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <h4 class="fw-bold">Support</h4>
+                        <ul class="ps-0">
+                            <li class="my-1" v-for="(link, i) in supportFooterLink" :key="i">
+                                <a class="text-light fw-light" :href="link.href">
+                                    <i class="me-2" :class="link.icon"></i>
+                                    {{link.linkName}}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,16 +79,24 @@
 
 <script>
 import { state } from "../store";
-import TheCard from './TheCard.vue';
 
 export default {
     name: "TheFooter",
-    components: { TheCard },
 
     computed: {
         siteInfo() {
             return state.siteInfo;
         },
+        aboutFooterLink() {
+            return state.aboutFooterLink;
+        },
+        transportFooterLink() {
+            return state.transportFooterLink;
+        },
+        supportFooterLink() {
+            return state.supportFooterLink;
+        }
+
     }
 }
 </script>
