@@ -6,9 +6,10 @@
                 <div class="row">
                     <div class="col-9">
                         <div>
-                            <small class="text-primary">WHO WE ARE</small>
+                            <small class="text-primary text-uppercase">WHO WE ARE</small>
                             <h2 class="my-3">
-                                <span class="colored_box_below"> <i class="bi bi-gem"></i> Excellence</span> in Transport</h2>
+                                <span class="colored_box_below text-primary"> <i class="bi bi-gem"></i> Excellence</span> in Transport
+                            </h2>
                             <p class="fw-light">
                                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. A quo ex earum dolorum placeat tenetur sit quas et, aut officia, ut voluptas architecto! Beatae molestias cum accusantium commodi, corporis laboriosam.
                             </p>
@@ -68,15 +69,24 @@
 
         <!-- section nero ROAD TRANSPORT -->
         <div class="py-5 bg-secondary">
-            <div class="container debug_border">
-                <div class="debug">
-                    <small>ROAD TRANSPORT</small>
-                    <h2>Main Service</h2>
-                    <div class="d-flex gap-5">
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet fuga dolorem, esse quidem possimus illo temporibus voluptatem magni itaque veritatis quas nobis debitis quis, unde recusandae laboriosam accusamus sed ex!
-                        </p>
-                        <a class="debug_border" href="javascript:void(0)">GET IN TOUCH</a>
+            <div class="container py-5">
+                <div>
+                    <div class="text-primary text-uppercase">ROAD TRANSPORT</div>
+                    <h2 class="my-3 text-white">
+                        Main <span class="colored_box_below">Services</span>
+                    </h2>
+                    <div class=" row">
+                        <div class="col-8">
+                            <P class="text-white fw-light mb-5">
+                                With all of this expertise and capability comes an unrivalled commitment to customer service. We will
+                                work hard to understand your needs in order to develop a productive, long-term partnership.
+                            </P>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex justify-content-end">
+                                <a class="btn_outline" href="javascript:void(0)">SEE ALL</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <TheCard></TheCard>
@@ -85,16 +95,35 @@
 
         <!-- section bianco HOW IT WORKS IN PRACTICE -->
         <div class="py-5">
-            <div class="container debug_border">
+            <div class="container pt-5">
                 <div class="text-center">
-                    <small>HOW IT WORKS IN PRACTICE</small>
-                    <h2>Logistical Procedure</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nulla laboriosam dolore suscipit quidem. Maxime obcaecati facere porro ex! Repudiandae rerum mollitia perspiciatis nostrum doloremque. Consectetur, temporibus. Facilis, accusantium iure!</p>
+                    <div class="text-primary text-uppercase py-4">HOW IT WORKS IN PRACTICE</div>
+                    <h2><span class="colored_box_below text-primary">Logistical</span> Procedure</h2>
+                    <P class="fw-light mb-5">
+                        We work with innovative methodologies to ensure that the entire delivery process is done form
+                        start to finish as planned.
+                    </P>
                 </div>
             </div>
-            <!-- road map???? -->
-            <div class="debug_border mt-3 bg-primary">
-                card e road-map
+            <!-- road map -->
+            <div>
+                <div class="road_map_border pb-5">
+                    <div class="d-flex flex-column justify-content-center align-items-center text-center">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-2" v-for="(map, i) in roadMapList" :key="i">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <div class="colored_box_below_round mb-3 fw-bold position">{{ map.number }}</div>
+                                    <div class="height_120">
+                                        <h4 class="fw-bold mt-5">{{ map.title }}</h4>
+                                    </div>
+                                    <small class="fw-light">{{ map.text }}</small>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -216,6 +245,33 @@ export default {
                     src: "/img/truck-1.png",
                     type: "Heavy",
                     weight: "Max Weight 24000 kg",
+                },
+            ],
+            roadMapList: [
+                {
+                    number: "01",
+                    title: "Collection of information",
+                    text: "lorem ipsum dolor sit amet consectectur.",
+                },
+                {
+                    number: "02",
+                    title: "Service Invoice Sending",
+                    text: "lorem ipsum dolor sit amet consectectur.",
+                },
+                {
+                    number: "03",
+                    title: "Withdrawal of Cargo",
+                    text: "lorem ipsum dolor sit amet consectectur.",
+                },
+                {
+                    number: "04",
+                    title: "Transport Customer Order",
+                    text: "lorem ipsum dolor sit amet consectectur.",
+                },
+                {
+                    number: "05",
+                    title: "Successful Delivery",
+                    text: "lorem ipsum dolor sit amet consectectur.",
                 },
             ]
         }

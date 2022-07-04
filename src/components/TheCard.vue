@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex gap-2 h-100">
+    <div class="d-flex gap-4 h-100">
         <div class="card">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ut perferendis inventore quis impedit temporibus dicta debitis reiciendis totam reprehenderit, ratione dolore amet obcaecati molestias at optio quasi aut aliquid!
         </div>
