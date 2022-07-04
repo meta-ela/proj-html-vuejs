@@ -94,7 +94,7 @@
         </div>
 
         <!-- section bianco HOW IT WORKS IN PRACTICE -->
-        <div class="py-5">
+        <div class="py-5 bg-teal-100">
             <div class="container pt-5">
                 <div class="text-center">
                     <div class="text-primary text-uppercase py-4">HOW IT WORKS IN PRACTICE</div>
@@ -151,13 +151,14 @@
 
         <!-- section nera CUSTOMER TESTIMONIALS -->
         <div class="py-5 bg-secondary">
-            <div class="container debug_border text-center">
-                <div class="debug">
-                    <small>CUSTOMER TESTIMONIALS</small>
-                    <h2>Tusted Feedback</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate quisquam recusandae aliquam quibusdam aperiam minus adipisci, facere fuga odio quo, aspernatur eos modi omnis magni dolores blanditiis quis molestiae dolor!
-                    </p>
+            <div class="container py-5 text-center text-white">
+                <div>
+                    <div class="text-primary text-uppercase py-3">CUSTOMER TESTIMONIALS</div>
+                    <h2>Trusted <span class="colored_box_below">Feedback</span></h2>
+                    <P class="fw-light my-5">
+                        We work intensively in search of ideals that can add up in the lives of our customers.
+                        This is what moves us and we are grateful foe the recognition.
+                    </P>
                 </div>
                 <TheCard></TheCard>
             </div>
@@ -165,34 +166,55 @@
 
         <!-- section bianca con form SEND A MESSAGE -->
         <div class="py-5">
-            <div class="container debug_border">
+            <div class="container py-5 debug_border">
                 <div class="row h-100">
-                    <div class="col-8 ">
-                        <div class="debug ">
-                            <small>SEND A MESSAGE</small>
-                            <h2>Get in Touch</h2>
-                            <small>lore lorem lore ispum dnsj</small>
+                    <div class="col-9 ">
+                        <div class="mb-5">
+                            <div class="text-primary text-uppercase">SEND A MESSAGE</div>
+                            <h2>Get in <span class="colored_box_below">Touch</span></h2>
+                            <small class="fw-light mb-5">
+                                We eill respond to your message as soon as possible.
+                            </small>
                         </div>
-                        <form class="row g-3">
-                            <div class="col-auto">
+                        <form class="row g-3 mb-4">
+                            <div class="col-6">
                                 <input type="text" class="form-control" placeholder="Name">
                             </div>
-                            <div class="col-auto">
+                            <div class="col-6">
                                 <input type="email" class="form-control" placeholder="Email">
                             </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="More info">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>
+                            </div>
                         </form>
+                        <button class="btn_outline bg-primary">Send</button>
                     </div>
                     <div class="col">
-                        <div class="debug">
+                        <div class="fw-light">
+                            <div class="fs-4 fw-bold mb-2">Example Inc.</div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, qui sequi reprehenderit tempora nostrum repellendus, animi atque similique aliquid, modi excepturi eligendi ea in numquam quas harum nam et! Perferendis.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             </p>
-                            <ul>
-                                <li>link</li>
-                                <li>link</li>
-                                <li>link</li>
-                                <a class="debug_border" href="javascript:void(0)">VIEW MAP</a>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <ul class="ps-0 pb-3">
+                                <li v-for="(info, i) in siteInfo" :key="i">
+                                    <a class="text-primary d-flex align-items-center gap-3 py-1" href="javascript:void(0)">
+                                        <div class="colored_box_below_round">
+                                            <i :class="info.icon"></i>
+                                        </div>
+                                        {{ info.info}}
+                                    </a>
+                                </li>
                             </ul>
+                            <a class="btn_outline text-primary" href="javascript:void(0)">VIEW MAP</a>
                         </div>
                     </div>
                 </div>
@@ -261,6 +283,20 @@ export default {
                 "Employees",
                 "Customers",
                 "Countries Served",
+            ],
+            siteInfo: [
+                {
+                    icon: "fa-solid fa-phone",
+                    info: "+1 (305) 1234-5678",
+                },
+                {
+                    icon: "fa-solid fa-envelope",
+                    info: "hello@example.com"
+                },
+                {
+                    icon: "fa-solid fa-location-dot",
+                    info: "Main Avenue, 987",
+                },
             ]
         }
     },

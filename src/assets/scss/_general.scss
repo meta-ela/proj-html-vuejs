@@ -98,6 +98,9 @@ a {
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .border_left_p {
@@ -135,6 +138,10 @@ h2 {
     display: flex;
 }
 
+.bg-teal-100 {
+    background-color: $teal-100;
+}
+
 .road_map_border {
     border-top: 8px solid $teal-200;
     position: relative;
@@ -148,6 +155,11 @@ h2 {
 
 .height_120 {
     height: 120px;
+}
+
+.form-control {
+    background-color: $light;
+    border-radius: .25rem;
 }
 /***********************************/
 
