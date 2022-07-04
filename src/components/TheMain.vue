@@ -129,36 +129,18 @@
 
         <!-- section banner image WHAT ARE WE DOING -->
         <div class="py-5 banner_img d-flex justify-content-center align-items-center">
-            <div class="container debug_border text-center text-white">
+            <div class="container py-5 text-center text-white">
                 <div>
                     <div>
-                        <small>WHAT ARE WE DOING</small>
-                        <h2>Results in Numbers</h2>
+                        <div class="text-primary text-uppercase py-3">WHAT ARE WE DOING</div>
+                        <h2><span class="colored_box_below">Results</span> in Numbers</h2>
                     </div>
                     <div>
                         <div class="row row-cols-4">
-                            <div class="col">
-                                <div>
-                                    <div>XY</div>
-                                    <small>lorem</small>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div>
-                                    <div>XY</div>
-                                    <small>lorem</small>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div>
-                                    <div>XY</div>
-                                    <small>lorem</small>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div>
-                                    <div>XY</div>
-                                    <small>lorem</small>
+                            <div class="col" v-for="(result, i) in roadNumbersList" :key="i">
+                                <div class="py-5">
+                                    <div class="text-primary fw-bold fs-3">{{ randomNumber() }}</div>
+                                    <small class="fs-5">{{ result }}</small>
                                 </div>
                             </div>
                         </div>
@@ -273,9 +255,21 @@ export default {
                     title: "Successful Delivery",
                     text: "lorem ipsum dolor sit amet consectectur.",
                 },
+            ],
+            roadNumbersList: [
+                "Certifications",
+                "Employees",
+                "Customers",
+                "Countries Served",
             ]
         }
     },
+
+    methods: {
+        randomNumber() {
+            return Math.floor(Math.random() * 500) + 1
+        }
+    }
 }
 </script>
 
