@@ -46,39 +46,18 @@
 </template>
 
 <script>
-/* import { state } from "../store"; */
+import { state } from "../store";
 import NavBar from './NavBar.vue';
 
 export default {
     name: "TheHeader",
     components: { NavBar },
 
-    data() {
-        return {
-            headerInfo: [
-                {
-                    icon: "fa-solid fa-phone",
-                    info: "+1 (305) 1234-5678",
-                },
-                {
-                    icon: "fa-solid fa-envelope",
-                    info: "hello@example.com"
-                },
-                {
-                    icon: "fa-brands fa-facebook-f",
-                    info: "",
-                },
-                {
-                    icon: "fa-brands fa-twitter",
-                    info: "",
-                },
-                {
-                    icon: "fa-brands fa-linkedin-in",
-                    info: "",
-                },
-            ],
+    computed: {
+        headerInfo() {
+            return state.headerInfo;
         }
-    },
+    }
 }
 </script>
 

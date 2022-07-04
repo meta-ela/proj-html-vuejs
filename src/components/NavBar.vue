@@ -9,9 +9,9 @@
                 <!-- stampare i dati con v-for??? -->
                 <ul class="d-flex gap-5 mb-0">
                     <li v-for="(link, i) in navBarLinks" :key="i">
-                    <a class="text-white" :href="link.href">
-                        {{ link.linkName }}
-                    </a>
+                        <a class="text-white" :href="link.href">
+                            {{ link.linkName }}
+                        </a>
                     </li>
                     <li>
                         <a class="text-white" href="javascript:void(0)">
@@ -28,33 +28,14 @@
 </template>
 
 <script>
+import { state } from "../store";
+
 export default {
     name: "NavBar",
 
-    data() {
-        return {
-            navBarLinks: [
-                {
-                    linkName: "HOME",
-                    href: "javascript:void(0)",
-                },
-                {
-                    linkName: "ABOUT",
-                    href: "javascript:void(0)",
-                },
-                {
-                    linkName: "SERVICES",
-                    href: "javascript:void(0)",
-                },
-                {
-                    linkName: "PROCESS",
-                    href: "javascript:void(0)",
-                },
-                {
-                    linkName: "TESTIMONIALS",
-                    href: "javascript:void(0)",
-                },
-            ],
+    computed: {
+        navBarLinks() {
+            return state.navBarLinks;
         }
     }
 }

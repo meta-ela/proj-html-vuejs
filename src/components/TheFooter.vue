@@ -11,11 +11,15 @@
                         <p class="fw-light">
                             A Functional HTML Template for Corporate & Business.
                         </p>
-                        <ul>
-                            <li>link</li>
-                            <li>link</li>
-                            <li>link</li>
-                            
+                        <ul class="ps-0 pb-3">
+                            <li v-for="(info, i) in siteInfo" :key="i">
+                                <a class="text-white d-flex align-items-center gap-3 py-1" href="javascript:void(0)">
+                                    <div>
+                                        <i :class="info.icon"></i>
+                                    </div>
+                                    {{ info.info}}
+                                </a>
+                            </li>
                         </ul>
                         <a class="btn_outline" href="javascript:void(0)">GET IN TOUCH</a>
                     </div>
@@ -38,10 +42,18 @@
 </template>
 
 <script>
+import { state } from "../store";
 import TheCard from './TheCard.vue';
+
 export default {
     name: "TheFooter",
-    components: { TheCard }
+    components: { TheCard },
+
+    computed: {
+        siteInfo() {
+            return state.siteInfo;
+        },
+    }
 }
 </script>
 

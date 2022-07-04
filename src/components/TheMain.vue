@@ -89,7 +89,15 @@
                         </div>
                     </div>
                 </div>
-                <TheCard></TheCard>
+                <div class="d-flex gap-4 h-100"> 
+                    <TheCard v-for="(card, i) in cardMainServicesInfo" :key="i"
+                    :subIcon="card.subIcon"
+                    :icon="card.icon"
+                    :title="card.title"
+                    :text="card.text"
+                    type="infoServices"
+                    ></TheCard>
+                </div>
             </div>
         </div>
 
@@ -160,7 +168,15 @@
                         This is what moves us and we are grateful foe the recognition.
                     </P>
                 </div>
-                <TheCard></TheCard>
+                <div class="d-flex gap-4 h-100"> 
+                    <TheCard v-for="(card, i) in cardFeedbackInfo" :key="i"
+                    :subIcon="card.subIcon"
+                    :image="card.src"
+                    :title="card.title"
+                    :text="card.text"
+                    type="infoFeedback"
+                    ></TheCard>
+                </div>
             </div>
         </div>
 
@@ -231,74 +247,25 @@ export default {
     name: "TheMain",
     components: { TheCard },
 
-    data() {
-        return {
-            state,
-            vehicleTypesList: [
-                {
-                    src: "/img/truck-1.png",
-                    type: "Light",
-                    weight: "Max Weight 1200 kg",
-                },
-                {
-                    src: "/img/truck-1.png",
-                    type: "Medium",
-                    weight: "Max Weight 6000 kg",
-                },
-                {
-                    src: "/img/truck-1.png",
-                    type: "Heavy",
-                    weight: "Max Weight 24000 kg",
-                },
-            ],
-            roadMapList: [
-                {
-                    number: "01",
-                    title: "Collection of information",
-                    text: "lorem ipsum dolor sit amet consectectur.",
-                },
-                {
-                    number: "02",
-                    title: "Service Invoice Sending",
-                    text: "lorem ipsum dolor sit amet consectectur.",
-                },
-                {
-                    number: "03",
-                    title: "Withdrawal of Cargo",
-                    text: "lorem ipsum dolor sit amet consectectur.",
-                },
-                {
-                    number: "04",
-                    title: "Transport Customer Order",
-                    text: "lorem ipsum dolor sit amet consectectur.",
-                },
-                {
-                    number: "05",
-                    title: "Successful Delivery",
-                    text: "lorem ipsum dolor sit amet consectectur.",
-                },
-            ],
-            roadNumbersList: [
-                "Certifications",
-                "Employees",
-                "Customers",
-                "Countries Served",
-            ],
-            siteInfo: [
-                {
-                    icon: "fa-solid fa-phone",
-                    info: "+1 (305) 1234-5678",
-                },
-                {
-                    icon: "fa-solid fa-envelope",
-                    info: "hello@example.com"
-                },
-                {
-                    icon: "fa-solid fa-location-dot",
-                    info: "Main Avenue, 987",
-                },
-            ]
-        }
+    computed: {
+        vehicleTypesList() {
+            return state.vehicleTypesList;
+        },
+        roadMapList() {
+            return state.roadMapList;
+        },
+        roadNumbersList() {
+            return state.roadNumbersList;
+        },
+        siteInfo() {
+            return state.siteInfo;
+        },
+        cardMainServicesInfo() {
+            return state.cardMainServicesInfo;
+        },
+        cardFeedbackInfo() {
+            return state.cardFeedbackInfo;
+        },
     },
 
     methods: {
