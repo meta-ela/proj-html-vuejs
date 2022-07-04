@@ -4,7 +4,7 @@
         <div class="d-flex justify-content-end">
             <i class="text-primary" :class="subIcon"></i>
         </div>
-        <div class="colored_box_below_round">
+        <div class="colored_box_below_round box_shadow_color_round">
             <i :class="icon"></i>
         </div>
         <div class="py-4">

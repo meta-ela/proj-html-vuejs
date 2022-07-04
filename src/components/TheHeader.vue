@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- info-bar superiore fisso -->
-        <div class="info_bar_bg">
+        <div class="info_bar_bg sticky-top">
             <div class="container py-2">
                 <div class="d-flex justify-content-between text-white fw-light">
                     <div>

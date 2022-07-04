@@ -73,7 +73,7 @@
                 <div>
                     <div class="text-primary text-uppercase">ROAD TRANSPORT</div>
                     <h2 class="my-3 text-white">
-                        Main <span class="colored_box_below">Services</span>
+                        Main <span class="colored_box_below box_shadow_color">Services</span>
                     </h2>
                     <div class=" row">
                         <div class="col-8">
@@ -141,7 +141,7 @@
                 <div>
                     <div>
                         <div class="text-primary text-uppercase py-3">WHAT ARE WE DOING</div>
-                        <h2><span class="colored_box_below">Results</span> in Numbers</h2>
+                        <h2><span class="colored_box_below box_shadow_color">Results</span> in Numbers</h2>
                     </div>
                     <div>
                         <div class="row row-cols-4">
@@ -162,7 +162,7 @@
             <div class="container py-5 text-center text-white">
                 <div>
                     <div class="text-primary text-uppercase py-3">CUSTOMER TESTIMONIALS</div>
-                    <h2>Trusted <span class="colored_box_below">Feedback</span></h2>
+                    <h2>Trusted <span class="colored_box_below box_shadow_color">Feedback</span></h2>
                     <P class="fw-light my-5">
                         We work intensively in search of ideals that can add up in the lives of our customers.
                         This is what moves us and we are grateful foe the recognition.
