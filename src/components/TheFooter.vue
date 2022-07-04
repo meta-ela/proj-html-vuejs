@@ -4,16 +4,20 @@
         <div class="container debug_border">
             <div class="row">
                 <div class="col">
-                    <div class="debug">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, qui sequi reprehenderit tempora nostrum repellendus, animi atque similique aliquid, modi excepturi eligendi ea in numquam quas harum nam et! Perferendis.
+                    <div class="text-white">
+                        <div class="fs-5">
+                            <span class="colored_box_below_logo">NEX</span> GEN
+                        </div>
+                        <p class="fw-light">
+                            A Functional HTML Template for Corporate & Business.
                         </p>
                         <ul>
                             <li>link</li>
                             <li>link</li>
                             <li>link</li>
-                            <a class="debug_border" href="javascript:void(0)">GET IN TOUCH</a>
+                            
                         </ul>
+                        <a class="btn_outline" href="javascript:void(0)">GET IN TOUCH</a>
                     </div>
                 </div>
                 <div class="col-8">
@@ -22,11 +26,11 @@
             </div>
         </div>
     </div>
-    <div class="py-1 bg-dark">
+    <div class="py-3 bg-dark">
         <div class="container text-white">
-            <div class="d-flex justify-content-between">
-                <div class="debug_border">lorem lorem</div>
-                <div class="debug_border">lorem lorem</div>
+            <div class="d-flex justify-content-between fw-light">
+                <small>Enjoy the low price. We are tracking any intention pf piracy.</small>
+                <small>&copy;2020 NEXGEN is Proudly Powerend by <a class="text-primary" href="javascript:void(0)">Codings</a>.</small>
             </div>
         </div>
     </div>

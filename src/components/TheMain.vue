@@ -166,13 +166,13 @@
 
         <!-- section bianca con form SEND A MESSAGE -->
         <div class="py-5">
-            <div class="container py-5 debug_border">
+            <div class="container py-5">
                 <div class="row h-100">
                     <div class="col-9 ">
                         <div class="mb-5">
                             <div class="text-primary text-uppercase">SEND A MESSAGE</div>
-                            <h2>Get in <span class="colored_box_below">Touch</span></h2>
-                            <small class="fw-light mb-5">
+                            <h2>Get in <span class="colored_box_below text-primary">Touch</span></h2>
+                            <small class="fw-light mt-5">
                                 We eill respond to your message as soon as possible.
                             </small>
                         </div>
