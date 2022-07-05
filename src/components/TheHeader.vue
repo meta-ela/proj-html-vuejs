@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!-- info-bar superiore fisso -->
+        <!-- info-bar superiore -->
         <div class="info_bar_bg" id="home-section">
             <div class="container py-2">
                 <div class="d-flex justify-content-between text-white fw-light">
@@ -9,7 +9,7 @@
                         Open Hours: Mon - Sat - 9:00 - 18:00
                     </div>
                     <div>
-                        <!-- stampare i dati con v-for -->
+                        <!-- stampare i dati con v-for, collegamenteo dati a state -->
                         <ul class="d-flex gap-4 mb-0">
                             <li v-for="(info, i) in headerInfo" :key="i">
                                 <a class="text-white" href="javascript:void(0)">
@@ -22,11 +22,10 @@
                 </div>
             </div>
         </div>
-        <!-- jumbotron image con dentro NavBar.vue -->
+        <!-- jumbotron image background con dentro NavBar.vue -->
         <div class="jumbotron_bg">
             <NavBar></NavBar>
             <div class="container my-5">
-                <!-- nav bar con ciclo v-for -->
                 <div class="row">
                     <div class="col-4 mt-5">
                         <small class="text-primary">LOGISTIC SERVICES</small>

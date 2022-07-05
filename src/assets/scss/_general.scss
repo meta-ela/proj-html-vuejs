@@ -5,7 +5,7 @@
     color: #2c3e50;
 }
 
-
+/* HEADER ONLY *****************************************************/
 .info_bar_bg{
     background-color: $infobar_color;
 }
@@ -28,7 +28,19 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+/***********************************************************************/
 
+
+
+h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+}
 
 ul li {
     list-style: none;
@@ -38,6 +50,8 @@ ul li {
     list-style-type: disc;
     line-height: 1.5rem;
 }
+
+
 
 
 .card {
@@ -89,15 +103,8 @@ ul li {
 
 
 
-h1 {
-    font-size: 4rem;
-    font-weight: 900;
-}
 
-h2 {
-    font-size: 3rem;
-    font-weight: 900;
-}
+
 
 .box_img {
     padding: .5rem;

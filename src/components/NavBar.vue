@@ -1,12 +1,13 @@
 <template>
     <div class="container py-3 fixed-top" >
-        <!-- stampare i dati con v-for??? -->
+        <!-- nav bar con ciclo v-for, collegamenteo dati a state -->
+        <!-- aggunto navbar fixed, scroll su tutta la pagina con swap di background-color -->
         <nav class="d-flex justify-content-between text-white py-2" v-on:scroll="backgroundNavBar()" :class="{ 'scroll': !view.scroll}">
             <div class="fs-5">
                 <span class="colored_box_below_logo">NEX</span> GEN
             </div>
             <div>
-                <!-- stampare i dati con v-for??? -->
+                <!-- stampare i dati con v-for, collegamenteo dati a state -->
                 <ul class="d-flex gap-5 mb-0">
                     <li v-for="(link, i) in navBarLinks" :key="i">
                         <a class="text-white hover_style_link" :href="link.href">

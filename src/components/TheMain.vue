@@ -90,6 +90,7 @@
                     </div>
                 </div>
                 <div class="d-flex gap-4 h-100"> 
+                    <!-- card con subIcon in posizione header -->
                     <TheCard v-for="(card, i) in cardMainServicesInfo" :key="i"
                     :subIcon="card.subIcon"
                     :icon="card.icon"
@@ -168,7 +169,8 @@
                         This is what moves us and we are grateful foe the recognition.
                     </P>
                 </div>
-                <div class="d-flex gap-4 h-100"> 
+                <div class="d-flex gap-4 h-100">
+                    <!-- card con subIcon in posizione footer --> 
                     <TheCard v-for="(card, i) in cardFeedbackInfo" :key="i"
                     :subIcon="card.subIcon"
                     :image="card.src"
@@ -192,6 +194,7 @@
                                 We eill respond to your message as soon as possible.
                             </small>
                         </div>
+                        <!-- componente TheForm.vue non reactive -->
                         <TheForm></TheForm>
                     </div>
                     <div class="col">
@@ -232,6 +235,7 @@ export default {
     name: "TheMain",
     components: { TheCard, TheForm },
 
+    // richiamo a dati dallo store
     computed: {
         vehicleTypesList() {
             return state.vehicleTypesList;

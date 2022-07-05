@@ -24,6 +24,7 @@
                         <a class="btn_outline" href="javascript:void(0)">GET IN TOUCH</a>
                     </div>
                 </div>
+                <!-- card con collegamento dati a store -->
                 <div class="col">
                     <div class="card">
                         <h4 class="fw-bold">About</h4>
@@ -66,6 +67,8 @@
             </div>
         </div>
     </div>
+
+    <!-- barra footer inferiore -->
     <div class="py-3 bg-dark">
         <div class="container text-white">
             <div class="d-flex justify-content-between fw-light">
