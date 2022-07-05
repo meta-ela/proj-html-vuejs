@@ -192,24 +192,7 @@
                                 We eill respond to your message as soon as possible.
                             </small>
                         </div>
-                        <form class="row g-3 mb-4">
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Name">
-                            </div>
-                            <div class="col-6">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Phone">
-                            </div>
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="More info">
-                            </div>
-                            <div class="col-12">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>
-                            </div>
-                        </form>
-                        <button class="btn_full">Send</button>
+                        <TheForm></TheForm>
                     </div>
                     <div class="col">
                         <div class="fw-light">
@@ -243,10 +226,11 @@
 <script>
 import { state } from "../store";
 import TheCard from './TheCard.vue';
+import TheForm from './TheForm.vue';
 
 export default {
     name: "TheMain",
-    components: { TheCard },
+    components: { TheCard, TheForm },
 
     computed: {
         vehicleTypesList() {

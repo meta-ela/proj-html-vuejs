@@ -13,7 +13,7 @@
                         <ul class="d-flex gap-4 mb-0">
                             <li v-for="(info, i) in headerInfo" :key="i">
                                 <a class="text-white" href="javascript:void(0)">
-                                    <i :class="info.icon" class="me-1"></i>
+                                    <i :class="info.icon" class="me-1 hover_icon_link"></i>
                                     <span class="hover_simple_link">{{info.info}}</span> 
                                 </a>
                             </li>
