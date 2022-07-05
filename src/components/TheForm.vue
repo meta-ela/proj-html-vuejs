@@ -26,6 +26,7 @@
                 <label for="Textarea">Message</label>
                 <textarea class="form-control" id="Textarea" rows="4" required></textarea>
             </div>
+
             <div class="col-12">
                 <button class="btn_full">Send</button>
             </div>
@@ -36,6 +37,13 @@
 <script>
 export default {
     name: "TheForm",
+
+    /* methods: {
+        replace() {
+            document.getElementById("div1").style.display="none";
+            document.getElementById("div2").style.display="block";
+        }
+    }, */
 }
 
 </script>

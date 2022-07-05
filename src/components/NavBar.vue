@@ -1,7 +1,7 @@
 <template>
-    <div class="container py-3">
+    <div class="container py-3 fixed-top" >
         <!-- stampare i dati con v-for??? -->
-        <nav class="d-flex justify-content-between text-white py-2">
+        <nav class="d-flex justify-content-between text-white py-2" v-on:scroll="backgroundNavBar()" :class="{ 'scroll': !view.scroll}">
             <div class="fs-5">
                 <span class="colored_box_below_logo">NEX</span> GEN
             </div>
@@ -37,8 +37,41 @@ export default {
         navBarLinks() {
             return state.navBarLinks;
         }
-    }
+    },
+
+    data() {
+        return {
+            view: {
+                scroll: true,
+            }
+        }
+    },
+
+    beforeMount() {
+    window.addEventListener('scroll', this.backgroundNavBar)
+    },
+
+    methods: {
+        backgroundNavBar() {
+            if(window.scrollY > 40) {
+                this.view.scroll = false
+            } else {
+                this.view.scroll = true
+            }
+        }
+    },
+
+    /* mounted: function () {
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 40) {
+                this.view.scroll = false
+            } else {
+                this.view.scroll = true
+            }
+        })
+    } */
 }
+
 </script>
 
 <style lang="scss" scoped>

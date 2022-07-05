@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- info-bar superiore fisso -->
-        <div class="info_bar_bg sticky-top">
+        <div class="info_bar_bg">
             <div class="container py-2">
                 <div class="d-flex justify-content-between text-white fw-light">
                     <div>
@@ -52,6 +52,18 @@ import NavBar from './NavBar.vue';
 export default {
     name: "TheHeader",
     components: { NavBar },
+
+    data() {
+        return {
+            scroll: false,
+        }
+    },
+
+    methods: {
+        backgroundNavBar() {
+            this.scroll = true;
+        }
+    },
 
     computed: {
         headerInfo() {
