@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- section bianco WHO WE ARE -->
-        <section class="py-5">
+        <section class="py-5" id="about-section">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-9">
@@ -68,7 +68,7 @@
         </section>
 
         <!-- section nero ROAD TRANSPORT -->
-        <div class="py-5 bg-secondary">
+        <div class="py-5 bg-secondary" id="services-section">
             <div class="container py-5">
                 <div>
                     <div class="text-primary text-uppercase">ROAD TRANSPORT</div>
@@ -102,7 +102,7 @@
         </div>
 
         <!-- section bianco HOW IT WORKS IN PRACTICE -->
-        <div class="py-5 bg-teal-100">
+        <div class="py-5 bg-teal-100" id="process-section">
             <div class="container pt-5">
                 <div class="text-center">
                     <div class="text-primary text-uppercase py-4">HOW IT WORKS IN PRACTICE</div>
@@ -158,7 +158,7 @@
         </div>
 
         <!-- section nera CUSTOMER TESTIMONIALS -->
-        <div class="py-5 bg-secondary">
+        <div class="py-5 bg-secondary" id="testimonials-section">
             <div class="container py-5 text-center text-white">
                 <div>
                     <div class="text-primary text-uppercase py-3">CUSTOMER TESTIMONIALS</div>

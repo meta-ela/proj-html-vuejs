@@ -150,5 +150,6 @@ h2 {
     box-shadow: 0 0 10px #aaa;
     background-color: rgb(3 77 77);
     border-radius: 0.25rem;
+    scroll-behavior: smooth;
     transition: background-color 400ms linear;
 }

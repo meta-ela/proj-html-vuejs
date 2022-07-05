@@ -20,23 +20,23 @@ export const state = Vue.observable({
     navBarLinks: [
         {
             linkName: "HOME",
-            href: "javascript:void(0)",
+            href: "#home-section",
         },
         {
             linkName: "ABOUT",
-            href: "javascript:void(0)",
+            href: "#about-section",
         },
         {
             linkName: "SERVICES",
-            href: "javascript:void(0)",
+            href: "#services-section",
         },
         {
             linkName: "PROCESS",
-            href: "javascript:void(0)",
+            href: "#process-section",
         },
         {
             linkName: "TESTIMONIALS",
-            href: "javascript:void(0)",
+            href: "#testimonials-section",
         },
     ],
 
