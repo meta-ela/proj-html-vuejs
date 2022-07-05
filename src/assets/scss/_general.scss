@@ -6,19 +6,6 @@
 }
 
 
-/* DEBUG ONLY *******************************/
-.debug {
-    padding: 1rem;
-    border: 1px dashed blue;
-    background-color: azure;
-}
-
-.debug_border{
-    border: 1px dashed red;
-    padding: .5rem;
-}
-/********************************************/
-
 .info_bar_bg{
     background-color: $infobar_color;
 }
@@ -47,30 +34,11 @@ ul li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    padding: 1rem 0rem;
+.li_disc {
+    list-style-type: disc;
+    line-height: 1.5rem;
 }
 
-
-/* BOTTONI  ***********************/
-
-.btn_outline {
-    &:hover,
-    &:active{
-        background-color: $primary;
-        color: white;
-        box-shadow: 0 0.5em 0.5em -0.4em rgba($primary_lighter, .5);
-        transform: scale(1.1);
-    }
-
-    color: white;
-    border: 1px solid $primary;
-    padding: .5rem 1rem;
-    border-radius: 4px;
-}
-
-/***********************************/
 
 .card {
     padding: 2rem;
@@ -78,13 +46,6 @@ a {
     color: whitesmoke;
     height: 100%;
 }
-
-
-/* DETTAGLI GRAFICI ****************/
-/* .colored_box_below_logo, .colored_box_below {
-    color: $primary;
-    background-color: rgba($primary_lighter, .5);
-} */
 
 .colored_box_below_logo {
     color: $primary;
@@ -126,10 +87,7 @@ a {
     border-left: 8px solid $teal-200;
 }
 
-.li_disc {
-    list-style-type: disc;
-    line-height: 1.5rem;
-}
+
 
 h1 {
     font-size: 4rem;
@@ -178,4 +136,4 @@ h2 {
     background-color: $light;
     border-radius: .25rem;
 }
-/***********************************/
+

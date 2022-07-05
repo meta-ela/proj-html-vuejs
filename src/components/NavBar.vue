@@ -9,17 +9,17 @@
                 <!-- stampare i dati con v-for??? -->
                 <ul class="d-flex gap-5 mb-0">
                     <li v-for="(link, i) in navBarLinks" :key="i">
-                        <a class="text-white" :href="link.href">
+                        <a class="text-white hover_style_link" :href="link.href">
                             {{ link.linkName }}
                         </a>
                     </li>
                     <li>
-                        <a class="text-white" href="javascript:void(0)">
+                        <a class="text-white hover_style_link" href="javascript:void(0)">
                             <i class="fa-regular fa-user"></i>
                         </a>
                     </li>
                     <li>
-                        <a class="btn_outline bg-primary" href="javascript:void(0)">GET IN TOUCH</a>
+                        <a class="btn_full" href="javascript:void(0)">GET IN TOUCH</a>
                     </li>
                 </ul>
             </div>

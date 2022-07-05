@@ -14,7 +14,7 @@
                             <li v-for="(info, i) in headerInfo" :key="i">
                                 <a class="text-white" href="javascript:void(0)">
                                     <i :class="info.icon" class="me-1"></i>
-                                    {{ info.info}}
+                                    <span class="hover_simple_link">{{info.info}}</span> 
                                 </a>
                             </li>
                         </ul>
@@ -34,7 +34,7 @@
                         <P class="text-white fw-light mb-5">
                             Fractional or exclusive road cargo transportation to all regions, with small, medium and large vehicles.
                         </P>
-                        <a class="btn_outline bg-primary me-4" href="javascript:void(0)">GET IN TOUCH</a>
+                        <a class="btn_full me-4" href="javascript:void(0)">GET IN TOUCH</a>
                         <a class="btn_outline" href="javascript:void(0)">READ MORE</a>
                     </div>
                     <div class="col"></div>

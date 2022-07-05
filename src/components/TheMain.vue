@@ -209,7 +209,7 @@
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>
                             </div>
                         </form>
-                        <button class="btn_outline bg-primary">Send</button>
+                        <button class="btn_full">Send</button>
                     </div>
                     <div class="col">
                         <div class="fw-light">
@@ -226,11 +226,12 @@
                                         <div class="colored_box_below_round">
                                             <i :class="info.icon"></i>
                                         </div>
-                                        {{ info.info}}
+                                        <span class="hover_simple_link">{{ info.info}}</span>
+                                        
                                     </a>
                                 </li>
                             </ul>
-                            <a class="btn_outline text-primary" href="javascript:void(0)">VIEW MAP</a>
+                            <a class="btn_outline_reverse" href="javascript:void(0)">VIEW MAP</a>
                         </div>
                     </div>
                 </div>

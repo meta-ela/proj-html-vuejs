@@ -17,7 +17,7 @@
                                     <div>
                                         <i :class="info.icon"></i>
                                     </div>
-                                    {{ info.info}}
+                                    <span class="hover_simple_link">{{ info.info}}</span>
                                 </a>
                             </li>
                         </ul>
@@ -31,7 +31,7 @@
                             <li class="my-1" v-for="(link, i) in aboutFooterLink" :key="i">
                                 <a class="text-light fw-light" :href="link.href">
                                     <i class="me-2" :class="link.icon"></i>
-                                    {{link.linkName}}
+                                    <span class="hover_simple_link">{{ link.linkName}}</span>
                                 </a>
                             </li>
                         </ul>
@@ -44,7 +44,7 @@
                             <li class="my-1" v-for="(link, i) in transportFooterLink" :key="i">
                                 <a class="text-light fw-light" :href="link.href">
                                     <i class="me-2" :class="link.icon"></i>
-                                    {{link.linkName}}
+                                    <span class="hover_simple_link">{{ link.linkName}}</span>
                                 </a>
                             </li>
                         </ul>
@@ -57,7 +57,7 @@
                             <li class="my-1" v-for="(link, i) in supportFooterLink" :key="i">
                                 <a class="text-light fw-light" :href="link.href">
                                     <i class="me-2" :class="link.icon"></i>
-                                    {{link.linkName}}
+                                    <span class="hover_simple_link">{{ link.linkName}}</span>
                                 </a>
                             </li>
                         </ul>
@@ -70,7 +70,7 @@
         <div class="container text-white">
             <div class="d-flex justify-content-between fw-light">
                 <small>Enjoy the low price. We are tracking any intention pf piracy.</small>
-                <small>&copy;2020 NEXGEN is Proudly Powerend by <a class="text-primary" href="javascript:void(0)">Codings</a>.</small>
+                <small>&copy;2020 NEXGEN is Proudly Powerend by <a class="text-primary hover_simple_link" href="javascript:void(0)">Codings</a>.</small>
             </div>
         </div>
     </div>
